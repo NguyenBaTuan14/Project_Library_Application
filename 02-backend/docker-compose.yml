@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  library-app:
+    build:
+      context: ./spring-boot-library
+    ports:
+      - "8080:8080"
+    networks:
+      - demo-network
+networks:
+  demo-network:
